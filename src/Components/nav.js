@@ -4,7 +4,7 @@ import DehazeIcon from '@mui/icons-material/Dehaze';
 
 function Navbar() {
     function tes(){
-        alert('aaa')
+        alert('aaa');
     }
 
     return(
@@ -12,11 +12,10 @@ function Navbar() {
             <ul className="listStyle">
                 <li>
                     <DehazeIcon className='button' onClick={tes}/>      
-                </li>
-                {/*<li>
+                </li> 
+                <li>
                     <img src={profile} className='img'/>
-                </li> */
-                } 
+                </li>
             </ul>
         </nav>
     );
