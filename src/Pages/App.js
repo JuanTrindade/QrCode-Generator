@@ -2,7 +2,8 @@ import './style.css';
 import QRCode from 'react-qr-code';
 import QRCodeLink from 'qrcode';
 import { useState } from 'react';
-import Navbar from '../Components/nav';
+import Navbar from '../Components/Navbar/nav';
+import Footerbar from '../Components/Footer/footer';
 
 function App() {
   const [qrValue, setQrValue] = useState('');
@@ -41,6 +42,8 @@ function App() {
           href={link}>Baixar QR CODE
         </a>
       </div>
+
+      <Footerbar />
     </div>
   );
 }
