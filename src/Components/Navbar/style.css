@@ -38,16 +38,18 @@
 .modalStyle{
     height: 100vh;
     background-color: #000;
-    width: 120px;
+    width: 150px;
     color: #f2f2f2;
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition-duration: 1s;
+    
 }
 
 .button{
     width: 100%;
-    max-width: 120px;
+    max-width: 150px;
     height: 40px;
     justify-content: center;
     background-color: transparent;
@@ -59,10 +61,11 @@
     padding: 2px;
     position: fixed;
     bottom: 0;
-    transition: 0.5s;
+    transition-duration: 0.5s;
 
 }
 .button:hover{
     background-color: #dfe6e9;
     color: #000;
+
 }

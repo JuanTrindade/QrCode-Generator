@@ -24,12 +24,13 @@ function Navbar() {
                 <ReactModal
                     isOpen={open}
                     onRequestClose={ModalClose}
-                    className='removeStyle'
+                    className='remove'
                 >
                     <div className='modalStyle'>
-                        <a className='link white spacement border'>LINK 1</a>
-                        <a className='link white spacement border'>LINK 2</a>
-                        <a className='link white spacement border'>LINK 3</a>
+                        <h3 className='TITLE spacement'>TITLE</h3>
+                        <a className='textDecor white spacement border'>LINK 1</a>
+                        <a className='textDecor white spacement border'>LINK 2</a>
+                        <a className='textDecor white spacement border'>LINK 3</a>
                         <button onClick={ModalClose} className='button'>CLOSE SETTINGS</button>
                     </div>
                 </ReactModal>
