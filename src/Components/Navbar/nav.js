@@ -3,6 +3,7 @@ import profile from '../../Images/OIP.jpg';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import ReactModal from 'react-modal'
 import { useState } from 'react'
+import Link from '../Links/links';
 
 const Navbar = () => {
     const [open, isOpen] = useState(false);
@@ -30,9 +31,10 @@ const Navbar = () => {
                 >
                     <div className='modalStyle'>
                         <h3 className='TITLE spacement'>TITLE</h3>
-                        <a className='textDecor white spacement border'>LINK 1</a>
-                        <a className='textDecor white spacement border'>LINK 2</a>
-                        <a className='textDecor white spacement border'>LINK 3</a>
+                        <Link>LINK 1</Link>
+                        <Link>LINK 2</Link>
+                        <Link>LINK 3</Link>
+                        <Link>LINK 4</Link>
                         <button onClick={ModalClose} className='button'>CLOSE SETTINGS</button>
                     </div>
                 </ReactModal>

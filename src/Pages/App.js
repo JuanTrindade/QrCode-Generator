@@ -23,6 +23,8 @@ const App = () => {
     generateLink(e.target.value);
   }
 
+  
+
   return (
     <div className='container'>
       <Navbar />
