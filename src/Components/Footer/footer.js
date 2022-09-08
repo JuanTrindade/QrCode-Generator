@@ -1,7 +1,6 @@
 import './style.css';
-import GitHubIcon from '@mui/icons-material/GitHub';
 
-function Footerbar(){
+const Footerbar = () => {
     return(
         <footer className='footerStyle'>
             <ul className='footerListStyle'>

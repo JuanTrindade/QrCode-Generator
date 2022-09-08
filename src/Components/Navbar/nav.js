@@ -4,14 +4,16 @@ import DehazeIcon from '@mui/icons-material/Dehaze';
 import ReactModal from 'react-modal'
 import { useState } from 'react'
 
-function Navbar() {
+const Navbar = () => {
     const [open, isOpen] = useState(false);
 
-    function OpenModal(){
+    const OpenModal = (think) => {
         isOpen(true);
+
+        console.log(think);
     }
 
-    function ModalClose(){
+    const ModalClose = () => {
         isOpen(false);
     }
 

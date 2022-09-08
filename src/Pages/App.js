@@ -5,11 +5,11 @@ import { useState } from 'react';
 import Navbar from '../Components/Navbar/nav';
 import Footerbar from '../Components/Footer/footer';
 
-function App() {
+const App = () => {
   const [qrValue, setQrValue] = useState('');
   const [link, setLink] = useState('');
 
-  function generateLink(link_url){
+  const generateLink = (link_url) => {
     QRCodeLink.toDataURL(link_url, {
       width: 600,
       height: 400
@@ -18,7 +18,7 @@ function App() {
     })
   }
 
-  function ValueQrcode(e){
+  const ValueQrcode = (e) => {
     setQrValue(e.target.value);
     generateLink(e.target.value);
   }
