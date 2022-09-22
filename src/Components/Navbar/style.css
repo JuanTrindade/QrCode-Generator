@@ -38,7 +38,7 @@
 .modalStyle{
     height: 100vh;
     background-color: #000;
-    width: 150px;
+    width: 220px;
     color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
 
 .button{
     width: 100%;
-    max-width: 150px;
+    max-width: 220px;
     height: 40px;
     justify-content: center;
     background-color: transparent;

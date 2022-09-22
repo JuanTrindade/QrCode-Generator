@@ -3,14 +3,14 @@ import profile from '../../Images/OIP.jpg';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import ReactModal from 'react-modal'
 import { useState } from 'react'
+import Link from '../Links';
+import Title from '../Title';
 
 const Navbar = () => {
     const [open, isOpen] = useState(false);
 
-    const OpenModal = (think) => {
+    const OpenModal = () => {
         isOpen(true);
-
-        console.log(think);
     }
 
     const ModalClose = () => {
@@ -29,10 +29,10 @@ const Navbar = () => {
                     className='remove'
                 >
                     <div className='modalStyle'>
-                        <h3 className='TITLE spacement'>TITLE</h3>
-                        <a className='textDecor white spacement border'>LINK 1</a>
-                        <a className='textDecor white spacement border'>LINK 2</a>
-                        <a className='textDecor white spacement border'>LINK 3</a>
+                        <Title>QRCODE-GEN</Title>
+                        <Link link="HISTÓRICO DE QRCODE"/>
+                        <Link link="PLANOS MENSAIS"/>
+                        <Link link="SAIR"/>
                         <button onClick={ModalClose} className='button'>CLOSE SETTINGS</button>
                     </div>
                 </ReactModal>
